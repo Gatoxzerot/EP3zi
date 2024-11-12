@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+    }
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo titulo"
+            "cabecera cabecera cabecera"
+            "contenido1 contenido1 contenido1"
+            "contenido2 contenido2 imagen3"
+            "contenido2 contenido2 imagen3"
+            "imagen1 imagen2 imagen3"
+            "pie1 pie1 pie1"
+            "pie2 pie2 pie2";
+        gap: 20px;
+        max-width: 1200px;
+        margin: 20px auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    .titulo {
+        grid-area: titulo;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 2em;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .cabecera {
+        grid-area: cabecera;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .cabecera a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .cabecera a:hover {
+        background-color: #555;
+    }
+    .contenido1 {
+        grid-area: contenido1;
+        color: #f2f2f2;
+        padding: 20px;
+        background-color: #1a2131;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .contenido2 {
+        grid-area: contenido2;
+        padding: 20px;
+        background-color: #f8ba68;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .imagen1 {
+        grid-area: imagen1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .imagen2 {
+        grid-area: imagen2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .imagen3 {
+        grid-area: imagen3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .imagen img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .pie1 {
+        grid-area: pie1;
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    .pie2 {
+        grid-area: pie2;
+        text-align: center;
+        padding: 10px;
+        background-color: #ffffff;
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>Epic Games</h1>
+        </div>
+        <div class="cabecera">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Blog</a>
+            <a href="#">Galería</a>
+            <a href="#">Videos</a>
+            <a href="http://127.0.0.1:5500/contactos.html">Contáctanos</a>
+        </div>
+        <div class="contenido1">
+            <h1>Nosotros</h1>
+        </div>
+        <div class="contenido2">
+            <h2>¿Quienes Somos?</h2>
+            <h3>Somos Epic Games, una compañía de desarrollo de videojuegos con sede en Estados Unidos, fundada en 1991 por Tim Sweeney en Carolina del Norte. Desde nuestros inicios, nos hemos destacado en la industria por nuestros motores gráficos y juegos como la serie Unreal Tournament. <br><br>
+
+            Nuestro juego más reconocido y exitoso hasta la fecha es Fortnite, lanzado en 2017. Fortnite es un juego de batalla real donde los jugadores compiten para ser el último en pie en un entorno de mundo abierto. Además del modo Battle Royale, que es el más popular, también ofrecemos otros modos como "Salvar el Mundo", un juego cooperativo de defensa contra oleadas de enemigos. <br><br>
+                
+            En Epic Games, nos enorgullece haber creado un juego que no solo ha capturado la atención de millones de jugadores en todo el mundo, sino que también ha sido una plataforma para colaboraciones únicas con franquicias de renombre en películas, música y deportes. <br><br>
+                
+            Utilizamos un modelo de negocio "free-to-play", lo que significa que Fortnite es gratuito para jugar, pero generamos ingresos a través de compras dentro del juego de cosméticos y pases de batalla, que ofrecen desafíos y recompensas exclusivas para los jugadores. <br><br>
+                
+            Continuamos comprometidos con Fortnite, proporcionando actualizaciones frecuentes con nuevos contenidos, eventos en el juego y mejoras en la jugabilidad para mantener la experiencia fresca y emocionante para nuestra comunidad de jugadores. <br><br>
+                
+            En resumen, en Epic Games somos los creadores y desarrolladores de Fortnite, y estamos dedicados a proporcionar una experiencia de juego innovadora y emocionante para nuestros jugadores en todo el mundo. <br>
+            </h3>
+        </div>
+        <div class="imagen1"><img src="imagen1.jpg" height="200px" alt=""></div>
+        <div class="imagen2"><img src="imagen2.jpeg" height="200px" alt=""></div>
+        <div class="imagen3"><img src="imagen3.webp" height="500px" alt=""></div>
+        <div class="pie1">
+            <h3>© 2024, Epic Games, Inc. Epic, Epic Games, el logo de Epic Games, Fortnite, el logo de Fortnite, Unreal, Unreal Engine 4 y UE4 son marcas comerciales o marcas registradas de Epic Games, Inc. tanto en Estados Unidos de América como en el resto del mundo. Todos los derechos reservados. <br>  
+            </h3>
+        </div>
+        <div class="pie2">
+            <img src="redes.png" height="100px">
+        </div>
+    </div>
+</body>
+</html>
